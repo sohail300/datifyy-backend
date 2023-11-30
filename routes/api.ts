@@ -6,7 +6,10 @@ import dotenv from "dotenv";
 dotenv.config();
 const route = Router();
 
-route.use('/secure', authenticate, limiter);
+route.get('/secure', authenticate, limiter , (req,res) => {
+    console.log('Secure Route');
+    res.send('Secure Route');
+});
 
 export default route;
 
