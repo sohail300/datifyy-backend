@@ -56,11 +56,11 @@
 ## How I deployed it on Render
 
    - Used build command for building
-    ```sh
-    npm run build 
-    ```
+        ```sh
+        npm run build 
+        ```
    
    - Used start command for starting the server
-    ```sh
-    npm start 
-    ```
+        ```sh
+        npm start 
+        ```
