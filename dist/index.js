@@ -11,7 +11,6 @@ app.use('/auth', auth_1.default);
 app.get('/', (req, res) => {
     res.send('Root Page');
 });
-const port = process.env.PORT;
-app.listen(port || 3000, () => {
-    console.log(`Server listening on port ${port}`);
+app.listen(5000, () => {
+    console.log('Server listening at port 5000');
 });
