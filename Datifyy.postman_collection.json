@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "42da10ce-609b-4b31-a796-3070dd6d6755",
+		"name": "Datifyy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20665288"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test4@gmail.com\",\r\n  \"username\": \"test4\",\r\n  \"password\": \"test@12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identifier\": \"test1@gmail.com\",\r\n  \"password\": \"test@12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Root Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "secure-route",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAxMzY2MTUzLCJleHAiOjE3MDEzNjk3NTN9._ddE3p35RU3kBDh2Ad59PNr9OvHAI2YQuojtex33x3c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/secure",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"secure"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Global",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identifier\": \"test1@gmail.com\",\r\n  \"password\": \"test@12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://datifyy-backend.onrender.com/auth/login",
+							"protocol": "https",
+							"host": [
+								"datifyy-backend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Root Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://datifyy-backend.onrender.com/",
+							"protocol": "https",
+							"host": [
+								"datifyy-backend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test4@gmail.com\",\r\n  \"username\": \"test4\",\r\n  \"password\": \"test@12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://datifyy-backend.onrender.com/auth/signup",
+							"protocol": "https",
+							"host": [
+								"datifyy-backend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "secure-route",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAxMzY2MTUzLCJleHAiOjE3MDEzNjk3NTN9._ddE3p35RU3kBDh2Ad59PNr9OvHAI2YQuojtex33x3c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://datifyy-backend.onrender.com/api/secure",
+							"protocol": "https",
+							"host": [
+								"datifyy-backend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"secure"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
